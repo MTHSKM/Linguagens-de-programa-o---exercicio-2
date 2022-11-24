@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linguagens de Programação - Exercício 2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/cabecarioRodape.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="src/app/main.js" defer></script>
+    <script src="src/app/exibePessoas.js" defer></script>
+    <script src="src/app/adicionaPessoas.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+                <div>
+                    <h1>Linguagens de Programação - Exercício 2</h1>
+                </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/nsunb_matheuskim/" target="_blank"><img src="src/img/instagram.png" alt="Ícone do Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5511944659427" target="_blank"><img src="src/img/whatsapp.png" alt="Ícone do WhatsApp"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/nsunb_mthK" target="_blank"><img src="src/img/twitter.png" alt="Ícone do Twitter"></a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="form" id="insiraDados">
+            <form action="" class="primeiroForm" id="cadastroPessoasForm">
+                <label for="nome" class="labelPrimeiroForm">Insira o seu nome:</label>
+                <input type="text" name="nome" placeholder="Nome" required id="inputNome">
+
+                <label for="peso" class="labelPrimeiroForm">Insira o seu peso:</label>
+                <input type="text" name="peso" placeholder="0.00" pattern="^\d*(\.\d{0,2})?$" required id="inputPeso">
+                <!--<input type="number" name="peso" placeholder="" min="1" max="5" required>-->
+
+                <label for="altura" class="labelPrimeiroForm">Insira a sua altura:</label>
+                <input type="text" name="altura" pattern="^\d*(\.\d{0,2})?$" placeholder="0.00" required id="inputAltura">
+
+                <input type="submit" value="Calcular" class="submitPrimeiroForm">
+            </form>
+        </div>
+
+        <div class="arquivoJSON">
+            <button id="submitJSONForm">Adicionar dados JSON</button>
+        </div>
+
+        <div class="tabela">
+            <table id="mostraDados">
+                <tr>
+                    <td><span>Nome</span></td>
+                    <td><span>Peso</span></td> 
+                    <td><span>Altura</span></td> 
+                    <td><span>IMC</span></td>
+                    <td><span>Classificação</span></td>
+                    <td><span>Emoji</span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+            <p>Desenvolvido por <a href="https://www.linkedin.com/in/matheus-kim-19b154251/" target="_blank" class="aluno">Matheus Kim</a> em conjunto com o professor <a href="" class="professor">Eduardo Ribeiro Felipe</a> pela <a href="https://unifei.edu.br/" class="instituicao">UNIFEI</a></p>
+            <p class="copyright">&copy; Copyright MTHSKM  - 2022.</p>
+    </footer>
+
+</body>
+
+</html>

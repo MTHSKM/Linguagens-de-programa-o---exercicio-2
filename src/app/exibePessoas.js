@@ -15,7 +15,7 @@ function exibeAsPessoas(pessoa){
                 <td>${pessoa.altura}</td>
                 <td>${IMC.toFixed(2)}</td>
                 <td>${classicacao}</td>
-                <td><img src="${emoji}"></td>
+                <td><img src="${emoji}" alt="Ícone de classificação ${classicacao}"></td>
             </tr>
         `
 }

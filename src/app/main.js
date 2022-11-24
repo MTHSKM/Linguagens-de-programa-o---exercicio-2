@@ -11,6 +11,7 @@ async function getBuscarPessoasDoJSON(){
     pessoas = await res.json()
 
     formJSON.addEventListener('click', ()=>{
+
         pessoas.forEach(pessoa=>{
             exibeAsPessoas(pessoa)
     })

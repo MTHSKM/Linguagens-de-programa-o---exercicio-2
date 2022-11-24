@@ -1,4 +1,5 @@
 const elementoParaInserirPessoas = document.querySelector('#mostraDados')
+const divForm = document.querySelector('#divForm')
 
 function exibeAsPessoas(pessoa){
          const IMC = pessoa.peso/(pessoa.altura)**2
@@ -7,6 +8,8 @@ function exibeAsPessoas(pessoa){
 
         let classicacao = classificaIMC(pessoa)
         let emoji = emojiIMC(pessoa)
+
+        divForm.classList.remove('teste')
 
         elementoParaInserirPessoas.innerHTML+= `
             <tr>

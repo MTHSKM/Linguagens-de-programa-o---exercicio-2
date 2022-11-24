@@ -114,3 +114,7 @@ img {
 span{
     color: var(--primary-color);
 }
+
+.teste{
+    display: none;
+}

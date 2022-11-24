@@ -14,4 +14,8 @@ form.addEventListener("submit", (evento) => {
     }
 
     exibeAsPessoas(pessoaAtual)
+
+    nome.value = ''
+    peso.value = ''
+    altura.value = ''
 })
